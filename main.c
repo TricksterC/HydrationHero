@@ -22,7 +22,6 @@ const int powPin = 8;
 const int soilPin = A0;
 const int lightPin = A1;
 
-// Calibration values
 const int minValue = 514;
 const int maxValue = 894;
 
@@ -75,7 +74,7 @@ void loop() {
       float soilMoisture = readSoil();
       float lightIntensity = readLight();
 
-      // Store values
+      
       soilMoistureValues[currentPlant - 1] = soilMoisture;
       lightIntensityValues[currentPlant - 1] = lightIntensity;
 
